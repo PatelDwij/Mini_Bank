@@ -12,114 +12,86 @@
 
 ## 1. Project Overview
 
-MiniBank is a console-based banking application developed using Java. It demonstrates Object-Oriented Programming concepts through account management, banking transactions, validation, exception handling, file handling, collections, generic programming, and multithreading.
+MiniBank is a console-based banking application developed using Java. The project demonstrates Object-Oriented Programming (OOP) concepts through account management, banking transactions, validation, exception handling, file handling, collections, generic programming, and multithreading.
 
-This project contains:
+The repository contains an integrated MiniBank application along with individual practical implementations, Java source files, and supporting project resources.
 
-- An integrated MiniBank application.
-- Separate practical folders for Practical 1 to Practical 13.
-- Java source code and compiled application files.
-- A runnable JAR file.
-- Separate testing source files.
-
-**Faculty Instruction:** Practical 14, which covers JUnit Framework Testing, is excluded from the practical record because it is not included in the syllabus. The integrated MiniBank project is maintained separately.
-
-## 2. What's Inside This Project
-
-### A. `oop-minibank-complete/`
-
-This folder contains the integrated MiniBank application.
+## 2. Project Structure
 
 ```text
-oop-minibank-complete/
-├── bin/
-├── bin_test/
-├── src/
-├── test/
-├── MANIFEST.MF
-├── MiniBank.jar
-└── README.md
+OOP_MiniBank/
+├── README.md
+├── oop-minibank-complete/
+│   ├── src/
+│   ├── test/
+│   ├── bin/
+│   ├── bin_test/
+│   ├── MANIFEST.MF
+│   ├── MiniBank.jar
+│   └── README.md
+└── Practicals/
+    ├── Practical_01_MenuShell/
+    ├── Practical_02_CustomerAndAccount/
+    ├── Practical_03_ObjectMethodsAndNestedAddress/
+    ├── Practical_04_ValidationAndCommandParsing/
+    ├── Practical_05_InheritanceAndPolymorphism/
+    ├── Practical_06_InterfacesPackagesAndJar/
+    ├── Practical_07_AnnotationsAndReflection/
+    ├── Practical_08_CustomExceptions/
+    ├── Practical_09_MultithreadingAndSynchronization/
+    ├── Practical_10_TransactionProcessingAndDeadlock/
+    ├── Practical_11_FileHandlingAndReporting/
+    ├── Practical_12_CollectionsAndAccountStore/
+    └── Practical_13_GenericRepository/
 ```
 
-**Folder descriptions:**
+### Directory Description
 
-- `src/` — Java source code for the integrated application.
-- `bin/` — Compiled application classes.
-- `bin_test/` — Compiled test classes.
-- `test/` — Separate testing source files.
-- `MANIFEST.MF` — JAR manifest configuration.
-- `MiniBank.jar` — Packaged Java application.
-- `README.md` — Documentation specific to the integrated application.
-
-#### Main Source Code
-
-The integrated source code includes classes and interfaces for banking operations, account types, validation, transactions, and data management.
-
-The project includes components such as:
-
-- `MiniBank.java` — Main console application.
-- `PracticalDemos.java` — Demonstration and verification runner.
-- `Account.java` and specialized account classes.
-- `BankService.java` — Banking service operations.
-- `TransactionProcessor.java` — Transaction processing.
-- `AccountStore.java` and `Repository<T>` — Account storage and generic repository functionality.
-- Utility classes for validation, statements, logging, and file handling.
-- Custom exception classes for handling invalid banking operations.
-
-The exact functionality is defined by the source code included in the project.
-
-### B. `Practicals/`
-
-This folder contains the individual practical implementations from Practical 1 to Practical 13.
-
-```text
-Practicals/
-├── Practical_01_MenuShell/
-├── Practical_02_CustomerAndAccount/
-├── Practical_03_ObjectMethodsAndNestedAddress/
-├── Practical_04_ValidationAndCommandParsing/
-├── Practical_05_InheritanceAndPolymorphism/
-├── Practical_06_InterfacesPackagesAndJar/
-├── Practical_07_AnnotationsAndReflection/
-├── Practical_08_CustomExceptions/
-├── Practical_09_MultithreadingAndSynchronization/
-├── Practical_10_TransactionProcessingAndDeadlock/
-├── Practical_11_FileHandlingAndReporting/
-├── Practical_12_CollectionsAndAccountStore/
-└── Practical_13_GenericRepository/
-```
-
-These folders preserve the individual stages of the MiniBank practical work.
-
-**Practical 14 is intentionally excluded from this directory** in accordance with the faculty announcement.
-
-### C. Root `README.md`
-
-This file documents the complete project structure, application overview, and submission information.
+- **`oop-minibank-complete/`** — Contains the integrated MiniBank application.
+- **`src/`** — Contains the Java source code.
+- **`test/`** — Contains testing source files.
+- **`bin/`** — Contains compiled application classes.
+- **`bin_test/`** — Contains compiled test classes.
+- **`MANIFEST.MF`** — Contains JAR manifest configuration.
+- **`MiniBank.jar`** — Packaged Java application.
+- **`Practicals/`** — Organizes the individual practical implementations.
+- **`README.md`** — Provides project documentation.
 
 ## 3. Main Features
 
-The integrated MiniBank application demonstrates the following concepts, according to their implementation in the source code:
+The project demonstrates the following banking features and Java concepts, as implemented in the source code:
 
-- Menu-driven console application.
+- Menu-driven console interface.
 - Customer and bank account management.
 - Savings, current, and fixed-deposit account types.
-- Deposit, withdrawal, and money transfer operations.
+- Deposit and withdrawal operations.
+- Money transfer functionality.
 - Account statements and reporting.
 - Input validation and custom exceptions.
 - Encapsulation, inheritance, and polymorphism.
-- Interfaces and abstract classes.
+- Abstract classes and interfaces.
 - Collections and generic repositories.
 - File handling and data persistence.
 - Transaction processing.
 - Multithreading and synchronization.
-- Java packages and runnable JAR packaging.
+- Java packages and JAR packaging.
 
-## 4. Requirements
+## 4. Technologies Used
+
+- Java
+- Object-Oriented Programming
+- Java Collections Framework
+- Exception Handling
+- File Handling
+- Generics
+- Multithreading
+- Command-Line Tools
+
+## 5. System Requirements
 
 - Java Development Kit (JDK) 17 or later.
 - Windows Command Prompt or a Java-compatible IDE.
-- `java` and `javac` available in the system PATH.
+- Java commands configured in the system PATH.
 
 Check the installed Java version:
 
@@ -128,71 +100,73 @@ java -version
 javac -version
 ```
 
-## 5. How to Run the Integrated Application
+## 6. Running the Integrated Application
 
-### Step 1: Open the project directory
+### Step 1: Open the Project Directory
 
-Open Command Prompt and run:
+Open Command Prompt and navigate to the integrated project folder:
 
 ```cmd
 cd /d E:\OOP_MiniBank\oop-minibank-complete
 ```
 
-### Step 2: Run the JAR
+### Step 2: Start the Application
 
-Run the packaged application:
+Run the packaged JAR file:
 
 ```cmd
 java -jar MiniBank.jar
 ```
 
-If the JAR is configured correctly, the MiniBank console menu will appear.
+The application starts in the console if the JAR and its dependencies are configured correctly.
 
-Follow the menu instructions to use the available banking operations.
+### Step 3: Run Demonstration Mode
 
-### Step 3: Run the demonstration mode
-
-If supported by the included application, use:
+The project also supports a demonstration mode through the following command:
 
 ```cmd
 java -jar MiniBank.jar --demo
 ```
 
-This runs the demonstration mode implemented by the project.
+This executes the demonstration functionality implemented in the application.
 
-## 6. Testing Information
+## 7. Integrated Application Components
 
-The integrated project includes a separate `test/` directory.
+The integrated application contains classes and interfaces responsible for banking operations, account types, validation, transaction processing, data management, and utility functions.
 
-The faculty has instructed students not to include Practical 14 in the practical record because JUnit Framework Testing is outside the syllabus.
+Key components include:
 
-The supplied test directory contains project-local compatibility classes. These should not be described as the official JUnit 5 library.
+- **`MiniBank.java`** — Main console application.
+- **`PracticalDemos.java`** — Demonstration runner.
+- **`Account.java`** — Account-related functionality.
+- **`BankService.java`** — Banking service operations.
+- **`TransactionProcessor.java`** — Transaction processing.
+- **`AccountStore.java`** — Account storage functionality.
+- **`Repository<T>`** — Generic repository functionality.
+- **Exception classes** — Handle invalid banking operations.
+- **Utility classes** — Support validation, reporting, logging, and file operations.
 
-The separate test files are not required to be included in the practical record. Their presence does not mean that Practical 14 must be added to the practical file.
+The source code defines the exact behavior of each component.
 
-## 7. Practical Organization
+## 8. Learning Outcomes
 
-The `Practicals/` directory contains individual implementations for Practical 1 through Practical 13.
+Through this project, the following Java programming concepts are demonstrated:
 
-The `oop-minibank-complete/` directory contains the integrated application, combining the implemented banking features into one project.
-
-The practical folders and integrated application are maintained separately for easier organization and review.
-
-## 8. Submission Guidelines
-
-- Keep the integrated application in `oop-minibank-complete/`.
-- Retain Practical 1 to Practical 13 as required for the practical record.
-- Do not include Practical 14 in the practical file, as instructed by the faculty.
-- Keep the root README consistent with the actual project structure.
-- Include the GitHub repository link when required.
-- Submit the final project ZIP according to the faculty's instructions.
-- Avoid unnecessary duplicate projects and temporary build files.
+- Designing classes and objects.
+- Applying encapsulation, inheritance, and polymorphism.
+- Using interfaces and abstract classes.
+- Implementing input validation and exception handling.
+- Working with collections and generic types.
+- Performing file operations.
+- Managing concurrent operations using multithreading and synchronization.
+- Organizing Java applications into packages.
+- Packaging and running Java applications using JAR files.
 
 ## 9. Conclusion
 
-The MiniBank project demonstrates how Java and Object-Oriented Programming concepts can be applied to develop a structured, console-based banking application.
+The MiniBank project demonstrates the practical application of Java and Object-Oriented Programming concepts through a structured, console-based banking system.
 
-The individual practical folders organize the practical work, while the integrated MiniBank application combines the implemented features into a single project.
+The individual practical directories organize the implementations, while the integrated application brings the banking functionality together in one project.
 
 ---
 

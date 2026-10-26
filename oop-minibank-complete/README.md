@@ -1,86 +1,83 @@
-# OOPJ Practical List — MiniBank (Practicals 1 to 14)
-**Course**: CEUE203 — Object Oriented Programming with Java (Semester 3, 2026–27)  
-**Institution**: CHARUSAT  
-**Repository Naming Convention**: `oop-minibank-<rollno>`
+
+# Mini Bank Management System
 
 ## Project Overview
-MiniBank is a layered Java 17+ banking application developed progressively across Practicals 1 through 14. It demonstrates records, enums, switch expressions, object-oriented encapsulation, inheritance & runtime polymorphism, functional interfaces & lambdas, custom annotations & reflection, checked custom exceptions, multithreading & synchronization, thread pools & deadlock prevention, Java NIO file persistence & reporting, the Collections Framework, generic repositories, and JUnit 5 testing.
 
-## Package & Directory Structure
+Mini Bank Management System is a Java-based application developed using Object-Oriented Programming (OOP) concepts. It provides basic banking operations such as creating accounts, depositing money, withdrawing money, checking balances, and managing account information.
+
+## Technologies Used
+
+- Java
+- Object-Oriented Programming (OOP)
+- Java Collections
+- Exception Handling
+- File Handling
+- JUnit-compatible test structure
+
+## Features
+
+- Create and manage bank accounts
+- Deposit money into accounts
+- Withdraw money from accounts
+- Check account balances
+- Perform banking operations through service classes
+- Handle invalid operations using exception handling
+- Organize the application using modular Java classes
+
+## Project Structure
+
 ```text
 oop-minibank-complete/
-├── MANIFEST.MF
-├── MiniBank.jar                              # Pre-built runnable JAR (Main-Class: MiniBank)
-├── README.md
 ├── src/
-│   ├── MiniBank.java                         # Main CLI entry point (Practical 1 & 14)
-│   ├── PracticalDemos.java                   # Automated runner verifying Practicals 1 to 14
-│   ├── exception/                            # Practical 8: Checked custom exceptions
-│   │   ├── BankException.java
-│   │   ├── InsufficientFundsException.java
-│   │   ├── AccountNotFoundException.java
-│   │   └── InvalidAmountException.java
-│   ├── model/                                # Practicals 1, 2, 3, 4, 5, 6, 11, 12
-│   │   ├── Account.java
-│   │   ├── BankInfo.java
-│   │   ├── Command.java
-│   │   ├── CurrentAccount.java
-│   │   ├── Customer.java                     # Includes static nested Customer.Address & clone()
-│   │   ├── FixedDepositAccount.java
-│   │   ├── InterestBearing.java
-│   │   ├── MenuOption.java
-│   │   ├── Premium.java
-│   │   ├── SavingsAccount.java
-│   │   ├── Transactable.java
-│   │   ├── TransactionType.java
-│   │   ├── WithdrawRule.java
-│   │   └── annotation/                       # Practicals 7 & 14: Custom runtime annotations
-│   │       ├── Audit.java
-│   │       ├── Id.java
-│   │       ├── MaxLength.java
-│   │       └── Positive.java
-│   ├── service/                              # Practicals 9, 10, 12, 13, 14
-│   │   ├── AccountStore.java
-│   │   ├── AccountWorker.java
-│   │   ├── BankService.java
-│   │   ├── Repository.java
-│   │   └── TransactionProcessor.java
-│   └── util/                                 # Practicals 4, 7, 8, 11, 14
-│       ├── AccountFileStore.java
-│       ├── AnnotationValidator.java
-│       ├── AuditLogger.java
-│       ├── AuditSession.java
-│       ├── CommandParser.java
-│       ├── ReportGenerator.java
-│       ├── StatementFormatter.java
-│       ├── TransactionLogger.java
-│       └── Validator.java
-└── test/
-    └── BankServiceTest.java                  # Practical 14: JUnit 5 @Test suite
+│   ├── model/
+│   ├── service/
+│   ├── exception/
+│   └── util/
+├── test/
+├── bin/
+├── bin_test/
+├── MANIFEST.MF
+├── MiniBank.jar
+└── README.md
 ```
 
-## Quick Start Commands (JDK 17+)
+## Requirements
 
-### 1. Run the Pre-built Runnable JAR
+- Java Development Kit (JDK) 17 or compatible version
+- Command Prompt or a Java-supported IDE
+
+## How to Run
+
+1. Open the project folder in Command Prompt or a Java IDE.
+2. Ensure Java is installed and configured.
+3. Run the application using the available JAR file:
+
 ```bash
-# Launch the interactive MiniBank menu:
 java -jar MiniBank.jar
+```
 
-# Run all 14 Practical Expected-Result Demonstrations automatically:
+To run the demonstration mode:
+
+```bash
 java -jar MiniBank.jar --demo
 ```
 
-### 2. Compile from Source and Build `MiniBank.jar`
-```bash
-mkdir -p bin
-javac -d bin $(find src -name "*.java")
-jar cfm MiniBank.jar MANIFEST.MF -C bin .
-java -jar MiniBank.jar
-```
+## Concepts Implemented
 
-### 3. Compile and Run JUnit 5 Tests (`BankServiceTest`)
-```bash
-mkdir -p bin_test
-javac -cp bin -d bin_test $(find test -name "*.java")
-java -cp bin:bin_test BankServiceTest
-```
+- Classes and Objects
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- Constructors
+- Interfaces
+- Exception Handling
+- Collections
+- Modular Programming
+
+## Author
+
+**Dwij Patel**
+
+B.Tech Computer Engineering  
+CHARUSAT University
